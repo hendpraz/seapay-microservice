@@ -49,16 +49,17 @@ snap install postman
  make all
  ```
  
- ### Problems when build the app
+ ###Problems when building the app
  
 - User authentication error. 
     - How to solve: create superuser to get access to postgres
     - `sudo psql -U postgres`
     - `CREATE USER {USER_NAME} --Superuser`
-- postgres password authentication error.
+- Postgres password authentication error.
     - `cd /etc/postgresql/11/main`
     - `sudo nano pg_hba.conf`
     - change `md5` and `peer` to `trust`
+    - WARNING : DON'T CHANGE TO TRUST FOR SOFTWARE PRODUCTION. There will be no limit for the users to access database.
 
  ## How to run
 
