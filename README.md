@@ -42,7 +42,6 @@ Pre-requisites:
  ```
 snap install postman
  ```
- <br />
 
  ## How to build
 
@@ -50,7 +49,7 @@ snap install postman
  make all
  ```
  
- ###Problems when build the app
+ ### Problems when build the app
  
 - User authentication error. 
     - How to solve: create superuser to get access to postgres
